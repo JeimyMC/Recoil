@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  background: no-repeat center/70% url("./img/fondo.jpg");
+  height: 100vh;
+  padding: 10rem 40rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root > header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#root > header > p {
+  margin-right: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#root > header > select {
+  height: 4vh;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  background-color: transparent;
+  font-weight: bold;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+.tareas {
+  margin: 30px;
+}
+
+.input-creator {
+  margin-bottom: 2rem;
+}
+
+.input-creator > input {
+  height: 3vh;
+  width: 15vw;
+  border: none;
+}
+
+.input-creator > button {
+  margin-left: 10px;
+  width: 6vw;
+  height: 3vh;
+  background-color: brown;
   color: white;
+  border: none;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+ul > li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul > li > input:first-child {
+  border: none;
+  padding-left: 6px;
+  width: 20vw;
+}
+
+ul > li > button {
+  border: none;
+  width: 6vw;
+  height: 2vh;
+  background-color: brown;
+  color: white;
 }
